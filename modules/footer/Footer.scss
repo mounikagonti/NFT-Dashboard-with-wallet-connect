@@ -1,0 +1,19 @@
+.footer_wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  padding: 30px 30px;
+  font-size: 14px;
+  line-height: 21px;
+  color: #67748e;
+  text-align: center;
+  .footer_right {
+    @include displayCenter(center, center);
+    gap: 50px;
+    @media (max-width: 1050px) {
+      margin-top: 20px;
+    }
+    @include mQ($md) {
+      margin-top: 20px;
+    }
+  }
+}

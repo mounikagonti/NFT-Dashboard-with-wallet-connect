@@ -1,0 +1,120 @@
+.main_sidebar {
+  height: 100vh !important;
+  overflow-x: hidden !important;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  .sidebarTop {
+    margin-left: 30px;
+    height: 150vh !important;
+    .logo_wrapper {
+      @include displayCenter(center, flex-start);
+      padding: 30px 0 0 0;
+      .img_wrapper {
+        position: relative;
+        height: 30px;
+        width: 30px;
+      }
+      .logo_title {
+        font-size: 14px;
+        line-height: 22px;
+        color: #8392ab;
+      }
+    }
+    .sidebar_sticky {
+      position: relative;
+      position: sticky;
+      top: 0;
+      .top_links {
+        margin-top: 30px;
+        .icon_wrapper {
+          @include displayCenter(center, flex-start);
+          padding: 15px;
+          // background-color: #9ab5a870;
+          line-height: 22px;
+          margin-top: 10px;
+          color: #67748e;
+          cursor: pointer;
+
+          .link_icon {
+            font-size: 16px;
+          }
+          .link_text {
+            margin-left: 20px;
+            font-size: 14px;
+            line-height: 22px;
+          }
+        }
+        .active_navLink {
+          position: relative;
+          background-color: #9ab5a870;
+          // width: 100%;
+          font-weight: bold;
+          &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            border-radius: 5px 0 0 5px;
+            width: 4px;
+            height: 100%;
+            background-color: green;
+          }
+          .link_icon {
+            color: #02a352 !important;
+          }
+          .link_text {
+            color: #02a352 !important;
+          }
+        }
+      }
+      .sidebar_heading {
+        margin-top: 20px;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 15px;
+        text-transform: uppercase;
+      }
+      .sidebarBottom {
+        .bottom_links {
+          @include displayCenter(center, flex-start);
+          padding: 15px;
+          line-height: 22px;
+          margin-top: 10px;
+          color: #67748e;
+          cursor: pointer;
+          .bottom_icon {
+            font-size: 15px;
+          }
+          .bottom_link {
+            margin-left: 20px;
+            font-size: 14px;
+            line-height: 22px;
+          }
+        }
+        .active_bottomNavLink {
+          position: relative;
+          background-color: #9ab5a870;
+          // width: 100%;
+          font-weight: bold;
+          &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            border-radius: 5px 0 0 5px;
+            width: 4px;
+            height: 100%;
+            background-color: green;
+          }
+          .bottom_icon {
+            color: #02a352 !important;
+          }
+          .bottom_link {
+            color: #02a352 !important;
+          }
+        }
+      }
+    }
+  }
+}

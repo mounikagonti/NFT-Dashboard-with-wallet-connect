@@ -1,0 +1,18 @@
+.parent_wrapper {
+  display: flex;
+  justify-content: space-between;
+  .left_side {
+    min-width: 250px;
+    @include mQ($lg) {
+      display: none;
+    }
+  }
+  .right_side {
+    width: 100%;
+  }
+}
+
+.toggleMenuButton {
+  display: block !important;
+  min-width: 250px !important;
+}

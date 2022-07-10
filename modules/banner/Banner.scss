@@ -1,0 +1,51 @@
+.banner {
+  padding: 20px;
+  .banner_wrapper {
+    background-image: url("https://images.unsplash.com/photo-1618005198920-f0cb6201c115?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1740&amp;q=80");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    width: 100%;
+    padding: 65px 30px;
+    @include mQ($md) {
+      width: 100%;
+    }
+
+    .heading {
+      font-size: 36px;
+      line-height: 47px;
+      color: #ffffff;
+      width: 500px;
+      @include mQ($md) {
+        width: 200px;
+      }
+    }
+    .buttons {
+      @include displayCenter(center, flex-start);
+      margin-top: 30px;
+      .discover_btn {
+        color: #000000;
+        background-color: #ffffff;
+        border: none;
+        font-size: 14px;
+        line-height: 20px;
+        padding: 10px 20px;
+        border-radius: 20px;
+        font-weight: bold;
+        display: block;
+      }
+      .artist_btn {
+        color: #ffffff;
+        background: transparent;
+        border: 1px solid #ffffff;
+        margin-left: 5px;
+        font-size: 14px;
+        line-height: 20px;
+        padding: 10px 25px;
+        border-radius: 20px;
+        font-weight: bold;
+        display: block;
+      }
+    }
+  }
+}

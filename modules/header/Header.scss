@@ -1,0 +1,62 @@
+.header_wrapper {
+  @include displayCenter(center, space-between);
+  padding: 20px 50px;
+  top: 0;
+  position: sticky;
+  z-index: 1;
+  background-color: #ffff;
+  @media (max-width: 650px) {
+    padding: 5px 10px;
+  }
+  .header_left {
+    .search_icon {
+      @include displayCenter(center, center);
+      .menu_btn {
+        .menu_icon {
+          font-size: 25px;
+          line-height: 18px;
+          color: #67748e !important;
+          display: none;
+          @include mQ($lg) {
+            display: block;
+          }
+        }
+      }
+      .search_icon {
+        font-size: 20px;
+        line-height: 18px;
+        color: #67748e;
+        margin-left: 20px;
+      }
+      .search_input {
+        background: transparent;
+        outline: none;
+        border: none;
+        margin-left: 5px;
+        &::placeholder {
+          color: #67748e;
+          font-size: 15px;
+        }
+      }
+    }
+  }
+  .header_right {
+    position: relative;
+    @include displayCenter(center, center);
+    .wallet {
+      margin-right: 20px;
+    }
+    .notification {
+      font-size: 25px;
+      line-height: 18px;
+      color: #67748e;
+      margin-right: 20px;
+    }
+    .person {
+      font-size: 25px;
+      line-height: 18px;
+      color: #67748e;
+      margin-right: 40px;
+    }
+  }
+}
